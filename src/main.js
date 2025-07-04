@@ -5,3 +5,4 @@ import "./scripts/generics.js";
 import "./scripts/inmutability.js";
 import "./scripts/exhaustive-checking.js";
 import "./scripts/tupples.js";
+import "./scripts/narrowing.js";
