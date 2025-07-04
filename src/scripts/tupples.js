@@ -1,8 +1,5 @@
 import { createSignal } from "../implementations/tupples.js";
 
-/**
- * @type {readonly [number, number]}
- */
 const tupple = [2, 2];
 
 tupple.push;

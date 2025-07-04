@@ -1,7 +1,3 @@
-/**
- * @param {"junior" | "senior" | "tech lead" | "ceo"} seniority
- * @returns {string}
- */
 const getRole = (seniority) => {
   switch (seniority) {
     case "junior":
@@ -13,7 +9,6 @@ const getRole = (seniority) => {
     // case "ceo":
     //   return "You're the boss";
     default:
-      /** @type {never} */
       const _ = seniority;
       throw new Error("This should be unreacheable");
   }

@@ -5,16 +5,8 @@ import {
   narrowSplit,
 } from "../implementations/narrowing.js";
 
-const cookieTypes = /** @type {const} */ ([
-  "required",
-  "functional",
-  "analitycs",
-  "other",
-]);
+const cookieTypes = ["required", "functional", "analitycs", "other"];
 
-/**
- * @type {Record< typeof cookieTypes[number], () => void >}
- */
 const object = {
   required: () => {},
   analitycs: () => {},
