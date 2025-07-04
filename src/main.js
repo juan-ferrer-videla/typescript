@@ -3,3 +3,4 @@ import "./scripts/functions.js";
 import "./scripts/globals.js";
 import "./scripts/generics.js";
 import "./scripts/inmutability.js";
+import "./scripts/exhaustive-checking.js";
