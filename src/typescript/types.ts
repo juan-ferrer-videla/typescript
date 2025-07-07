@@ -15,3 +15,7 @@ export type Brand<T, Name extends string> = T & { [__brand]: Name };
 export type AccertFunction<T, Assertion extends T> = (
   value: T
 ) => asserts value is Assertion;
+
+export type TypePredicateFunction<T, Assertion extends T> = (
+  value: T
+) => value is Assertion;

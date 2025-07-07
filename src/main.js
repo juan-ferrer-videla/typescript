@@ -6,3 +6,4 @@ import "./scripts/inmutability.js";
 import "./scripts/exhaustive-checking.js";
 import "./scripts/tupples.js";
 import "./scripts/narrowing.js";
+import "./scripts/branded-types.js";

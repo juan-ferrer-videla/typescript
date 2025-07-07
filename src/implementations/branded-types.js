@@ -1,11 +1,17 @@
 /**
- * @import {AccertFunction, Brand} from "../typescript/types"
+ * @import {AccertFunction, Brand, TypePredicateFunction} from "../typescript/types"
  */
 
 /**
  * @typedef {Brand<string, "email">} Email
  */
 
+/**
+ * @type {TypePredicateFunction<string, Email>}
+ */
+export function isEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
 /**
  * @type {AccertFunction<string, Email>}
  */
