@@ -1,6 +1,16 @@
-import { assertEmail, sendEmail } from "../implementations/branded-types.js";
+import {
+  assertEmail,
+  isEmail,
+  sendEmail,
+} from "../implementations/branded-types.js";
 
 const email = "juan.ferrer@vml.com";
-assertEmail(email);
 
-sendEmail("invalid email");
+sendEmail(email);
+
+if (isEmail(email)) {
+  sendEmail(email);
+}
+
+assertEmail(email);
+sendEmail(email);
