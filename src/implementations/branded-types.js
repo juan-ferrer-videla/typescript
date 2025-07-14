@@ -14,6 +14,7 @@ export function isEmail(email) {
 }
 /**
  * @type {AccertFunction<string, Email>}
+ * @throws {Error} throws if email isn't a valid email.
  */
 export function assertEmail(email) {
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
