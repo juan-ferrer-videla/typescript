@@ -5,12 +5,14 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "servor src index.html 3001 --browse --editor --reload"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "servor": "^4.0.2",
     "typescript": "^5.8.3"
   }
 }

@@ -8,11 +8,18 @@ importers:
 
   .:
     devDependencies:
+      servor:
+        specifier: ^4.0.2
+        version: 4.0.2
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
 
 packages:
+
+  servor@4.0.2:
+    resolution: {integrity: sha512-MlmQ5Ntv4jDYUN060x/KEmN7emvIqKMZ9OkM+nY8Bf2+KkyLmGsTqWLyAN2cZr5oESAcH00UanUyyrlS1LRjFw==}
+    hasBin: true
 
   typescript@5.8.3:
     resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
@@ -20,5 +27,7 @@ packages:
     hasBin: true
 
 snapshots:
+
+  servor@4.0.2: {}
 
   typescript@5.8.3: {}
