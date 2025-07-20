@@ -10,11 +10,10 @@ const getRole = (seniority) => {
       return "great technical level, keep improving";
     case "tech lead":
       return "super technical level";
-    // case "ceo":
-    //   return "You're the boss";
+    case "ceo":
+      return "You're the boss";
     default:
-      /** @type {never} */
-      const _ = seniority;
+      /** @satisfies {never} */ (seniority);
       throw new Error("This should be unreacheable");
   }
 };
