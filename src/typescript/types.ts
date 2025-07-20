@@ -19,3 +19,9 @@ export type AccertFunction<T, Assertion extends T> = (
 export type TypePredicateFunction<T, Assertion extends T> = (
   value: T
 ) => value is Assertion;
+
+type MyAwaited<T extends Promise<unknown>> = T extends Promise<infer Value>
+  ? Value extends Promise<unknown>
+    ? Awaited<Value>
+    : Value
+  : never;
