@@ -40,7 +40,7 @@ export const narrowTrim = (string) => {
 /**
  * @template {string} S
  * @template {0[]} Acc
- * @typedef {S extends `${infer _}${infer Rest}` ? Length<Rest, [...Acc, 0]> : Acc["length"]} Length
+ * @typedef {S extends `${string}${infer Rest}` ? Length<Rest, [...Acc, 0]> : Acc["length"]} Length
  */
 
 /**
