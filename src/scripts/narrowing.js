@@ -14,7 +14,20 @@ const object = {
   // other: () => {},
 };
 
-const narrowReverseRes = narrowReverse("al reves");
-const narrowTrimRes = narrowTrim("  \n   Juanfer dev   \n\t   ");
-const narrowLengthRes = narrowLength("typescript");
-const narrowSplitRes = narrowSplit("ts_es_mejor", "_");
+const toReverse = "al reves";
+const toTrim = "  \n   Juanfer dev   \n\t   ";
+const toLength = "typescript";
+const toSplit = "ts_es_mejor";
+const toSplitSep = "_";
+
+const normalReverse = toReverse.split("").reverse().join("");
+const narrowReverseRes = narrowReverse(toReverse);
+
+const normalTrim = toTrim.trim();
+const narrowTrimRes = narrowTrim(toTrim);
+
+const normalLength = toLength.length;
+const narrowLengthRes = narrowLength(toLength);
+
+const normalSplit = toSplit.split(toSplitSep);
+const narrowSplitRes = narrowSplit(toSplit, toSplitSep);
